@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "minecraftcitybuilder",
+    "name": "Minecraft City Builder",
+    "description": "Tools and workflow helpers for building large-scale cities in Minecraft 1.12 (scaffolds to road generators).",
+    "version": "0.0.1",
+    "mcversion": "1.12",
+    "url": "",
+    "authors": ["YourNameHere"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
