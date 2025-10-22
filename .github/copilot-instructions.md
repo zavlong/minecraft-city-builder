@@ -52,6 +52,44 @@ Below are short, prioritized ideas discovered during research. Each entry lists 
 	- Why: Speeds infrastructure layout and creates consistent lots.
 	- MVP: place spline between markers, generate basic road cross-section.
 
+    ### Key Systems
+
+    1. **Control Point System**
+    - Custom marker block for defining road path
+    - Stores points in NBT data for persistence
+    - Right-click to place, left-click to remove
+    - Network sync for multiplayer coordination
+
+    2. **Spline Generation**
+    - Cubic spline interpolation between control points
+    - Adjusts for terrain height with max slope limits
+    - Generates cross-section perpendicular to path direction
+    - Handles curves with proper block orientation
+
+    3. **Road Profiles**
+    - Configurable width, materials, features (sidewalks, curbs)
+    - JSON-based profile storage for sharing/presets
+    - Block orientation handling for stairs/slabs in details
+    - Support for asymmetric profiles (medians, turning lanes)
+
+    4. **Preview System**
+    - Client-side particle effects for spline path
+    - Ghost block preview for road surface
+    - Updates in real-time as points are added/moved
+    - Toggle between 2D plan view and 3D preview
+
+    5. **Generation Process**
+    - FAWE integration for async block placement
+    - Terrain conforming with cut/fill calculation
+    - Proper block updates for redstone/lighting
+    - Undo support via WorldEdit history
+    
+    ### Integration Points
+    - WorldEdit/FAWE API for efficient block operations
+    - Forge event system for block placement/interaction
+    - NBT storage for road profiles and markers
+    - Client-server packet sync for previews
+
 5. Schematic Diff & Merge Tool (server + optional client) — Diff two schematics or schematic vs world, visualize changes.
 	- Why: Avoids accidental overwrites; supports collaborative merges.
 	- MVP: load two schematics, show added/removed/changed blocks via overlay markers.

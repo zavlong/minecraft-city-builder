@@ -17,3 +17,4 @@ Quick setup (PowerShell):
 Notes:
 - This is a minimal scaffold: add code under `src/main/java` and resources under `src/main/resources`.
 - The project targets Minecraft 1.12 with ForgeGradle. Adjust `build.gradle` minecraft.version as needed.
+
